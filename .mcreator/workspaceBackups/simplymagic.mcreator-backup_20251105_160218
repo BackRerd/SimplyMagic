@@ -1,0 +1,246 @@
+{
+  "mod_elements": [
+    {
+      "name": "Er",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "er",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/ErProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/client/gui/TestGuiScreen.java",
+          "src/main/java/net/mcreator/simplymagic/world/inventory/TestGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "Kkkk",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kkkk",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/simplymagic/models/item/kkkk.json",
+          "src/main/java/net/mcreator/simplymagic/item/KkkkItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TestGuiTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_gui_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/TestGuiTitleProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CareerSelect",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/network/CareerSelectButtonMessage.java",
+          "src/main/java/net/mcreator/simplymagic/world/inventory/CareerSelectMenu.java",
+          "src/main/java/net/mcreator/simplymagic/client/gui/CareerSelectScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ER2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "er_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/ER2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CareerSelectTitle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select_title",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerSelectTitleProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "CareerSelectUpButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select_up_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerSelectUpButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CareerSelectButtonDown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select_button_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerSelectButtonDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CareerName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerNameProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "skill",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "SelectInt",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.simplymagic.kkkk": "Kkkk",
+      "gui.simplymagic.test_gui.label_select_carrer": "Select Carrer",
+      "select.title": "Select",
+      "career.select.title": "CareerSelectTitle"
+    },
+    "zh_cn": {
+      "item.simplymagic.kkkk": "kkkk(物品)",
+      "gui.simplymagic.test_gui.label_select_carrer": "职业选择(测试)",
+      "select.title": "选择",
+      "career.select.title": "职业选择"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Info",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "simplymagic",
+    "modName": "SimplyMagic",
+    "version": "1.0.0",
+    "author": "JoBackRer, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.simplymagic"
+  },
+  "mcreatorVersion": 202400452410
+}
