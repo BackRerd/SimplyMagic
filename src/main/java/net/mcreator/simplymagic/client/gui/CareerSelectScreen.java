@@ -100,6 +100,10 @@ public class CareerSelectScreen extends AbstractContainerScreen<CareerSelectMenu
 		guistate.put("button:imagebutton_4", imagebutton_4);
 		this.addRenderableWidget(imagebutton_4);
 		imagebutton_5 = new ImageButton(this.leftPos + 60, this.topPos + 35, 57, 85, 0, 0, 85, new ResourceLocation("simplymagic:textures/screens/atlas/imagebutton_5.png"), 57, 170, e -> {
+			if (true) {
+				SimplymagicMod.PACKET_HANDLER.sendToServer(new CareerSelectButtonMessage(2, x, y, z));
+				CareerSelectButtonMessage.handleButtonAction(entity, 2, x, y, z);
+			}
 		});
 		guistate.put("button:imagebutton_5", imagebutton_5);
 		this.addRenderableWidget(imagebutton_5);

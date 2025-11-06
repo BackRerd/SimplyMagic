@@ -190,6 +190,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "MainSelectInfo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_select_info",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/MainSelectInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Info"
+    },
+    {
+      "name": "CareerInfoGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_info_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/world/inventory/CareerInfoGuiMenu.java",
+          "src/main/java/net/mcreator/simplymagic/client/gui/CareerInfoGuiScreen.java"
+        ]
+      },
+      "path": "~/CareerInfoGui"
     }
   ],
   "variable_elements": [
@@ -212,15 +246,27 @@
   "language_map": {
     "en_us": {
       "item.simplymagic.kkkk": "Kkkk",
+      "gui.simplymagic.career_info_gui.label_armar": "Armar:0.5",
       "gui.simplymagic.test_gui.label_select_carrer": "Select Carrer",
+      "gui.simplymagic.career_info_gui.label_level35": "Level:35",
       "select.title": "Select",
-      "career.select.title": "CareerSelectTitle"
+      "gui.simplymagic.career_info_gui.label_damage1": "Damage:1",
+      "gui.simplymagic.career_info_gui.label_beilv013": "BeiLV:0.13",
+      "gui.simplymagic.career_info_gui.label_health": "Health:2",
+      "career.select.title": "CareerSelectTitle",
+      "gui.simplymagic.career_info_gui.label_exp": "EXP:420"
     },
     "zh_cn": {
       "item.simplymagic.kkkk": "kkkk(物品)",
+      "gui.simplymagic.career_info_gui.label_armar": "Armar:0.5",
       "gui.simplymagic.test_gui.label_select_carrer": "职业选择(测试)",
+      "gui.simplymagic.career_info_gui.label_level35": "Level:35",
       "select.title": "选择",
-      "career.select.title": "职业选择"
+      "gui.simplymagic.career_info_gui.label_damage1": "Damage:1",
+      "gui.simplymagic.career_info_gui.label_beilv013": "BeiLV:0.13",
+      "gui.simplymagic.career_info_gui.label_health": "Health:2",
+      "career.select.title": "职业选择",
+      "gui.simplymagic.career_info_gui.label_exp": "EXP:420"
     }
   },
   "foldersRoot": {
@@ -228,6 +274,10 @@
     "children": [
       {
         "name": "Info",
+        "children": []
+      },
+      {
+        "name": "CareerInfoGui",
         "children": []
       }
     ]

@@ -82,6 +82,7 @@
       "registry_name": "career_select",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/simplymagic/network/CareerSelectButtonMessage.java",
           "src/main/java/net/mcreator/simplymagic/world/inventory/CareerSelectMenu.java",
           "src/main/java/net/mcreator/simplymagic/client/gui/CareerSelectScreen.java"
         ]
@@ -134,6 +135,95 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "CareerSelectUpButton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select_up_button",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerSelectUpButtonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CareerSelectButtonDown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_select_button_down",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerSelectButtonDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CareerName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_name",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/CareerNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MainSelectInfo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_select_info",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/MainSelectInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Info"
+    },
+    {
+      "name": "CareerInfoGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "career_info_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/world/inventory/CareerInfoGuiMenu.java",
+          "src/main/java/net/mcreator/simplymagic/client/gui/CareerInfoGuiScreen.java"
+        ]
+      },
+      "path": "~/CareerInfoGui"
     }
   ],
   "variable_elements": [
@@ -142,6 +232,12 @@
       "type": "string",
       "scope": "player_persistent",
       "value": ""
+    },
+    {
+      "name": "SelectInt",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -163,7 +259,16 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Info",
+        "children": []
+      },
+      {
+        "name": "CareerInfoGui",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "simplymagic",

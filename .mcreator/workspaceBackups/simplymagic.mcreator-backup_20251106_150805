@@ -190,6 +190,26 @@
           }
         ]
       }
+    },
+    {
+      "name": "MainSelectInfo",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_select_info",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/simplymagic/procedures/MainSelectInfoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Info"
     }
   ],
   "variable_elements": [

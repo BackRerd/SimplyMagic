@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.simplymagic.world.inventory.CareerSelectMenu;
 import net.mcreator.simplymagic.procedures.CareerSelectUpButtonProcedure;
+import net.mcreator.simplymagic.procedures.CareerSelectButtonProcedure;
 import net.mcreator.simplymagic.procedures.CareerSelectButtonDownProcedure;
 import net.mcreator.simplymagic.SimplymagicMod;
 
@@ -70,6 +71,10 @@ public class CareerSelectButtonMessage {
 		if (buttonID == 1) {
 
 			CareerSelectButtonDownProcedure.execute(entity);
+		}
+		if (buttonID == 2) {
+
+			CareerSelectButtonProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

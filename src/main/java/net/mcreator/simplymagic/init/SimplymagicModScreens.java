@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.simplymagic.client.gui.TestGuiScreen;
 import net.mcreator.simplymagic.client.gui.CareerSelectScreen;
+import net.mcreator.simplymagic.client.gui.CareerInfoGuiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class SimplymagicModScreens {
@@ -21,6 +22,7 @@ public class SimplymagicModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(SimplymagicModMenus.TEST_GUI.get(), TestGuiScreen::new);
 			MenuScreens.register(SimplymagicModMenus.CAREER_SELECT.get(), CareerSelectScreen::new);
+			MenuScreens.register(SimplymagicModMenus.CAREER_INFO_GUI.get(), CareerInfoGuiScreen::new);
 		});
 	}
 }

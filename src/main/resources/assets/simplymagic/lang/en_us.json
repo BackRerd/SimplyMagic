@@ -1,6 +1,12 @@
 {
   "item.simplymagic.kkkk": "Kkkk",
+  "gui.simplymagic.career_info_gui.label_armar": "Armar:0.5",
   "gui.simplymagic.test_gui.label_select_carrer": "Select Carrer",
+  "gui.simplymagic.career_info_gui.label_level35": "Level:35",
   "select.title": "Select",
-  "career.select.title": "CareerSelectTitle"
+  "gui.simplymagic.career_info_gui.label_damage1": "Damage:1",
+  "gui.simplymagic.career_info_gui.label_beilv013": "BeiLV:0.13",
+  "gui.simplymagic.career_info_gui.label_health": "Health:2",
+  "career.select.title": "CareerSelectTitle",
+  "gui.simplymagic.career_info_gui.label_exp": "EXP:420"
 }

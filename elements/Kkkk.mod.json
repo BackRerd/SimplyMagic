@@ -37,10 +37,13 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "Er"
+      "name": "ER2"
     },
     "onRightClickedOnBlock": {
       "name": "ER2"
+    },
+    "onEntitySwing": {
+      "name": "Er"
     },
     "enableRanged": false,
     "shootConstantly": false,
